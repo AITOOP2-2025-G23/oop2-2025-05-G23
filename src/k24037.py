@@ -32,6 +32,8 @@ def lecture05_01():
                 xx = x % c_w
                 result_img[y, x] = capture_img[yy, xx]
 
-    # --- 書き込み処理 ---
-    cv2.imwrite("lecture05_01_K24037.png", result_img)
-    print("lecture05_01_K24037.png を保存しました。")
+    # 結果を output_images フォルダに保存
+    
+    out_path = 'output_images/lecture05_01_K24037.png'
+    cv2.imwrite(out_path, google_img)
+    print(f"保存しました: {out_path}")
